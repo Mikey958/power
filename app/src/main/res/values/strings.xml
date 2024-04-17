@@ -20,4 +20,7 @@
     <string name="i_have">у меня есть</string>
     <string name="akka">аккаунта</string>
     <string name="akk">аккаунт</string>
+    <string name="loginaccount">Вход в аккаунт</string>
+    <string name="regaccount">Регистрация</string>
+    <string name="background">background_error</string>
 </resources>
