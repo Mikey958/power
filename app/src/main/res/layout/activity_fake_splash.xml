@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FakeSplashActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="335dp"
+        android:layout_height="185dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="422dp"
+        android:layout_marginEnd="38dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/error_loadlogo"
+        app:srcCompat="@drawable/loadlogo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="161dp"
+        android:layout_height="161dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="125dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/error_spartak"
+        app:srcCompat="@drawable/spartak" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="390sp"
+        android:layout_height="128sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="307dp"
+        android:layout_marginEnd="11dp"
+        android:fontFamily="@font/alaruss"
+        android:gravity="center_horizontal"
+        android:shadowColor="#535353"
+        android:shadowDx="0"
+        android:shadowDy="5"
+        android:shadowRadius="8"
+        android:text="@string/logo_text"
+        android:textColor="@color/black"
+        android:textSize="64sp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="294sp"
+        android:layout_height="63sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="58sp"
+        android:layout_marginTop="609sp"
+        android:layout_marginEnd="59dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="@string/load_text"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:ignore="TextSizeCheck" />
+
+</RelativeLayout>

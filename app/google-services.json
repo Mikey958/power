@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "656639472865",
+    "firebase_url": "https://androidspartak-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "androidspartak",
+    "storage_bucket": "androidspartak.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656639472865:android:193ca12cf75228a314b3a0",
+        "android_client_info": {
+          "package_name": "com.example.power"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARmY8XKPA9ZKYuMx1F2hQB7_141gbaBRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

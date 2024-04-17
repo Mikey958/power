@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">power</string>
+    <string name="error_loadlogo">LoadLogo</string>
+    <string name="error_spartak">SpatakLogo</string>
+    <string name="logo_text">Тайна мощных СИСКЭ</string>
+    <string name="load_text">подожди, спартак, идёт загрузка…</string>
+    <string name="error_loginframegray">LoginFrameGray</string>
+    <string name="error_registerframegray">RegisterFrameGray</string>
+    <string name="error_login">Login</string>
+    <string name="error_reg">Register</string>
+    <string name="error_grayrectanglesmall">GrayRectangleSmall</string>
+    <string name="error_strokepanel">StrokePanel</string>
+    <string name="enter_loginpassword">Пожалуйста, введите логин и пароль для авторизации</string>
+    <string name="enter_login">Введите ваш логин</string>
+    <string name="enter_password">Введите ваш пароль</string>
+    <string name="confirm_password">Подтвердите ваш пароль</string>
+    <string name="login">Войти</string>
+    <string name="reg">Зарегистрироваться</string>
+    <string name="i_dont_have">у меня нет</string>
+    <string name="i_have">у меня есть</string>
+    <string name="akka">аккаунта</string>
+    <string name="akk">аккаунт</string>
+</resources>
