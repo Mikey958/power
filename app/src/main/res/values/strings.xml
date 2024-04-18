@@ -23,4 +23,14 @@
     <string name="loginaccount">Вход в аккаунт</string>
     <string name="regaccount">Регистрация</string>
     <string name="background">background_error</string>
+    <string name="error_training_button">Перейти на вкладку Тренировка</string>
+    <string name="error_eating">Перейти на вкладку питание</string>
+    <string name="welcome_text">Добро пожаловать, СПАРТАК!</string>
+    <string name="welcome_background">welcome_background</string>
+    <string name="error_eating_button">Перейти на вкладку Питание</string>
+    <string name="error_profile_button">Перейти на вкладку профиль</string>
+    <string name="error_achievmenttext">Мои Достижения</string>
+    <string name="error_trainingtext">Тренировка</string>
+    <string name="error_eatingtext">Питание</string>
+    <string name="error_profiletext">Профиль</string>
 </resources>
