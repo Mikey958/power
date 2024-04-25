@@ -6,5 +6,9 @@
         <item>@font/montserrat_bold</item>
         <item>@font/montserrat_light</item>
         <item>@font/montserrat_medium</item>
+        <item>@font/roboto_black</item>
+        <item>@font/roboto_bold</item>
+        <item>@font/roboto_light</item>
+        <item>@font/roboto_medium</item>
     </array>
 </resources>

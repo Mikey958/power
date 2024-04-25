@@ -6,13 +6,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.power.databinding.ActivityRegisterBinding;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -35,30 +31,30 @@ public class RegisterActivity extends AppCompatActivity {
         binding.regBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (binding.loginEt.getText().toString().isEmpty() || binding.passwordEt.getText().toString().isEmpty() || binding.passwordEt2.getText().toString().isEmpty()) {
+                if (binding.loginEt.getText().toString().isEmpty() ||
+                        binding.passwordEt.getText().toString().isEmpty() ||
+                        binding.passwordEt2.getText().toString().isEmpty()) {
                     Toast.makeText(getApplicationContext(), "Поля не могут быть пустыми", Toast.LENGTH_SHORT).show();
-                }
-                if (!binding.passwordEt.getText().toString().equals(binding.passwordEt2.getText().toString())){
-                    Toast.makeText(getApplicationContext(),"Пароли не совпадают", Toast.LENGTH_SHORT).show();
-                }else{
+                } else if (!binding.passwordEt.getText().toString().equals(binding.passwordEt2.getText().toString())) {
+                    Toast.makeText(getApplicationContext(), "Пароли не совпадают", Toast.LENGTH_SHORT).show();
+                } else {
                     FirebaseAuth.getInstance().createUserWithEmailAndPassword(binding.loginEt.getText().toString(), binding.passwordEt.getText().toString())
-                            .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                                @Override
-                                public void onComplete(@NonNull Task<AuthResult> task) {
-                                    if (task.isSuccessful()){
-                                        HashMap<String, String> userinfo = new HashMap<>();
-                                        userinfo.put("login", binding.loginEt.getText().toString());
-                                        userinfo.put("email", binding.loginEt.getText().toString());
-                                        FirebaseDatabase.getInstance().getReference().child("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                                .setValue(userinfo);
+                            .addOnCompleteListener(task -> {
+                                if (task.isSuccessful()) {
+                                    HashMap<String, String> userinfo = new HashMap<>();
+                                    userinfo.put("login", binding.loginEt.getText().toString());
+                                    userinfo.put("email", binding.loginEt.getText().toString());
+                                    FirebaseDatabase.getInstance().getReference().child("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                            .setValue(userinfo);
 
-                                        startActivity(new Intent(RegisterActivity.this,MainActivity.class));
-                                    }
+                                    startActivity(new Intent(RegisterActivity.this, MainActivity.class));
                                 }
                             });
 
                 }
             }
+
+
         });
     }
 }

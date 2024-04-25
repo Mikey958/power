@@ -33,4 +33,10 @@
     <string name="error_trainingtext">Тренировка</string>
     <string name="error_eatingtext">Питание</string>
     <string name="error_profiletext">Профиль</string>
+    <string name="progress_text">До цели осталось: 123 кг</string>
+    <string name="eating_text">Питание</string>
+    <string name="todo1">TODO1</string>
+    <string name="eating_razdel">РАЗДЕЛ ПИТАНИЯ</string>
+    <string name="todo2">TODO2</string>
+    <string name="todo3">TODO3</string>
 </resources>
