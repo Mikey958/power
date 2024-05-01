@@ -35,6 +35,7 @@
     <string name="error_profiletext">Профиль</string>
     <string name="progress_text">До цели осталось: 123 кг</string>
     <string name="eating_text">Питание</string>
+    <string name="profile_text">Профиль</string>
     <string name="train_text">Тренировка</string>
     <string name="todo1">TODO1</string>
     <string name="eating_razdel">РАЗДЕЛ ПИТАНИЯ</string>
@@ -45,4 +46,13 @@
     <string name="error_fullbody_train_text">Тренировка всего тела</string>
     <string name="error_fullbody_train_start_text">Начинающий 7 мин</string>
     <string name="training_chapter">РАЗДЕЛ ТРЕНИРОВОК</string>
+    <string name="statistics_text">Статистика</string>
+    <string name="information_text">Информация</string>
+    <string name="Height">Рост</string>
+    <string name="Weight">Вес</string>
+    <string name="desired_weight">Желаемый вес</string>
+    <string name="paul">Пол</string>
+    <string name="level">Уровень</string>
+    <string name="female_male">м/ж</string>
+    <string name="level_et">нач/прод</string>
 </resources>
