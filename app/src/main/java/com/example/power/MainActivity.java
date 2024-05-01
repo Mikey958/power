@@ -37,10 +37,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        findViewById(R.id.eatingButton).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.profileButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,EatingActivity.class);
+                Intent intent=new Intent(MainActivity.this,ProfileActivity.class);
                 startActivity(intent);
             }
         });
