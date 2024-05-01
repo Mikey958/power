@@ -65,21 +65,21 @@
         tools:ignore="TextSizeCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/breakfast"
         android:layout_width="242dp"
         android:layout_height="242dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/rectangle"
         android:contentDescription="@string/todo2"
         android:scaleType="centerCrop"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/lunch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:srcCompat="@drawable/breakfastlogo"
         tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/lunch"
         android:layout_width="242dp"
         android:layout_height="242dp"
         android:layout_marginTop="10dp"
@@ -87,13 +87,13 @@
         android:importantForAccessibility="no"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/breakfast"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:srcCompat="@drawable/lunchlogo"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/dinner"
         android:layout_width="485dp"
         android:layout_height="242dp"
         android:background="@drawable/rectangle"
@@ -101,7 +101,7 @@
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/breakfast"
         app:srcCompat="@drawable/dinnerlogo"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -112,8 +112,8 @@
         android:layout_marginStart="15dp"
         android:layout_marginBottom="15dp"
         android:importantForAccessibility="no"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
-        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintBottom_toBottomOf="@+id/breakfast"
+        app:layout_constraintStart_toStartOf="@+id/breakfast"
         app:srcCompat="@drawable/breakfast_text" />
 
     <ImageView
@@ -123,8 +123,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="9dp"
         android:contentDescription="@string/todo3"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="@+id/lunch"
+        app:layout_constraintTop_toTopOf="@+id/lunch"
         app:srcCompat="@drawable/lunch_text" />
 
     <ImageView
@@ -133,7 +133,7 @@
         android:layout_height="35dp"
         android:layout_marginBottom="14dp"
         android:importantForAccessibility="no"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+        app:layout_constraintBottom_toBottomOf="@+id/dinner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/dinner_text" />

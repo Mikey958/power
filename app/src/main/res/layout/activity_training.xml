@@ -27,7 +27,7 @@
         tools:ignore="VisualLintBounds" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/full_body_train_start"
         android:layout_width="485dp"
         android:layout_height="257dp"
         android:background="@drawable/rectangle"
@@ -57,7 +57,7 @@
         android:layout_height="24dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="@+id/full_body_train_start"
         app:layout_constraintTop_toBottomOf="@+id/imageView15"
         app:srcCompat="@drawable/startingsevenmin"
         android:contentDescription="@string/error_fullbody_train_start_text" />
@@ -73,56 +73,56 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+        app:layout_constraintTop_toBottomOf="@+id/full_body_train_start" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/hands_train_start"
         android:layout_width="242dp"
         android:layout_height="242dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/rectangle"
         android:contentDescription="@string/error_fullbody_chapter"
         android:scaleType="centerCrop"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintEnd_toStartOf="@+id/tension_train_start"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:srcCompat="@drawable/handstraining"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/tension_train_start"
         android:layout_width="242dp"
         android:layout_height="242dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/rectangle"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintStart_toEndOf="@+id/hands_train_start"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:srcCompat="@drawable/tensiontraining"
         android:contentDescription="@string/error_fullbody_chapter" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/legs_train_start"
         android:layout_width="242dp"
         android:layout_height="242dp"
         android:background="@drawable/rectangle"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+        app:layout_constraintTop_toBottomOf="@+id/hands_train_start"
         app:srcCompat="@drawable/legstraining"
         android:contentDescription="@string/error_fullbody_chapter" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/press_train_start"
         android:layout_width="242dp"
         android:layout_height="242dp"
         android:background="@drawable/rectangle"
         android:contentDescription="@string/error_fullbody_chapter"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton7"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:layout_constraintStart_toEndOf="@+id/legs_train_start"
+        app:layout_constraintTop_toBottomOf="@+id/tension_train_start"
         app:srcCompat="@drawable/presstraining"
         tools:ignore="ImageContrastCheck" />
 
@@ -133,7 +133,7 @@
         android:layout_marginStart="108dp"
         android:layout_marginTop="29dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageButton5"
+        app:layout_constraintTop_toTopOf="@+id/hands_train_start"
         app:srcCompat="@drawable/handstraintext"
         android:importantForAccessibility="no" />
 
@@ -142,7 +142,7 @@
         android:layout_width="149dp"
         android:layout_height="17dp"
         android:layout_marginStart="53dp"
-        app:layout_constraintStart_toStartOf="@+id/imageButton5"
+        app:layout_constraintStart_toStartOf="@+id/hands_train_start"
         app:layout_constraintTop_toBottomOf="@+id/imageView19"
         app:srcCompat="@drawable/startingfivemin"
         android:importantForAccessibility="no"/>
@@ -153,8 +153,8 @@
         android:layout_height="19dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="9dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
-        app:layout_constraintTop_toTopOf="@+id/imageButton6"
+        app:layout_constraintStart_toEndOf="@+id/hands_train_start"
+        app:layout_constraintTop_toTopOf="@+id/tension_train_start"
         app:srcCompat="@drawable/tensiontraintext"
         tools:ignore="ContentDescription" />
 
@@ -164,7 +164,7 @@
         android:layout_height="17dp"
         android:layout_marginStart="58dp"
         android:layout_marginTop="4dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintStart_toEndOf="@+id/hands_train_start"
         app:layout_constraintTop_toBottomOf="@+id/imageView21"
         app:srcCompat="@drawable/tenminutes"
         tools:ignore="ContentDescription" />
@@ -175,7 +175,7 @@
         android:layout_height="24dp"
         android:layout_marginStart="55dp"
         android:layout_marginBottom="27dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
+        app:layout_constraintBottom_toBottomOf="@+id/legs_train_start"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/legstraintext"
         android:importantForAccessibility="no" />
@@ -186,7 +186,7 @@
         android:layout_height="20dp"
         android:layout_marginStart="55dp"
         android:layout_marginBottom="6dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
+        app:layout_constraintBottom_toBottomOf="@+id/legs_train_start"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/staringfiveminblue"
         android:importantForAccessibility="no" />
@@ -197,8 +197,8 @@
         android:layout_height="24dp"
         android:layout_marginStart="129dp"
         android:layout_marginBottom="102dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton8"
-        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:layout_constraintBottom_toBottomOf="@+id/press_train_start"
+        app:layout_constraintStart_toEndOf="@+id/legs_train_start"
         app:srcCompat="@drawable/presstraintext"
         android:importantForAccessibility="no" />
 
@@ -208,8 +208,8 @@
         android:layout_height="17dp"
         android:layout_marginStart="86dp"
         android:layout_marginBottom="84dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton8"
-        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:layout_constraintBottom_toBottomOf="@+id/press_train_start"
+        app:layout_constraintStart_toEndOf="@+id/legs_train_start"
         app:srcCompat="@drawable/stratthreemin"
         android:importantForAccessibility="no" />
 
