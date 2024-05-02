@@ -55,4 +55,8 @@
     <string name="level">Уровень</string>
     <string name="female_male">м/ж</string>
     <string name="level_et">нач/прод</string>
+    <string name="eatinglevel">набор/сброс веса</string>
+    <string name="eating_text_level">Питание</string>
+    <string name="load_text_btn">Загрузить</string>
+    <string name="save_text_btn">Сохранить</string>
 </resources>

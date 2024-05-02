@@ -74,25 +74,27 @@
     <ImageView
         android:id="@+id/imageView28"
         android:layout_width="453dp"
-        android:layout_height="372dp"
-        android:layout_marginTop="26dp"
+        android:layout_height="556dp"
+        android:layout_marginTop="24dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView27"
         app:srcCompat="@drawable/graybackground"
-        android:importantForAccessibility="no"
         tools:ignore="VisualLintBounds" />
 
     <ImageView
         android:id="@+id/imageView29"
         android:layout_width="420dp"
-        android:layout_height="352dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="515dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView28"
         app:layout_constraintEnd_toEndOf="@+id/imageView28"
         app:layout_constraintStart_toStartOf="@+id/imageView28"
         app:layout_constraintTop_toTopOf="@+id/imageView28"
         app:srcCompat="@drawable/whitebackground"
-        android:importantForAccessibility="no"
         tools:ignore="VisualLintBounds" />
 
     <TextView
@@ -100,7 +102,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="55dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/Height"
         android:textColor="#000000"
@@ -113,7 +115,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="99dp"
+        android:layout_marginTop="141dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/Weight"
         android:textColor="#000000"
@@ -126,7 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="171dp"
+        android:layout_marginTop="225dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/desired_weight"
         android:textColor="#000000"
@@ -140,7 +142,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="243dp"
+        android:layout_marginTop="310dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/paul"
         android:textColor="#000000"
@@ -153,7 +155,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="315dp"
+        android:layout_marginTop="395dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/level"
         android:textColor="#000000"
@@ -161,23 +163,36 @@
         app:layout_constraintStart_toStartOf="@+id/imageView28"
         app:layout_constraintTop_toTopOf="@+id/imageView28" />
 
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="480dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/eating_text_level"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView28"
+        app:layout_constraintTop_toTopOf="@+id/imageView28" />
+
     <ImageView
         android:id="@+id/imageView30"
-        android:layout_width="321dp"
-        android:layout_height="288dp"
-        android:layout_marginStart="91dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="273dp"
+        android:layout_height="428dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="87dp"
+        android:importantForAccessibility="no"
         app:layout_constraintStart_toStartOf="@+id/imageView28"
         app:layout_constraintTop_toTopOf="@+id/imageView28"
-        app:srcCompat="@drawable/liner"
-        android:importantForAccessibility="no" />
+        app:srcCompat="@drawable/liner" />
 
     <EditText
         android:id="@+id/height_et"
         android:layout_width="100dp"
         android:layout_height="48dp"
         android:layout_marginStart="312dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="49dp"
         android:background="@null"
         android:fontFamily="@font/roboto_medium"
         android:hint="xxx см"
@@ -196,7 +211,7 @@
         android:layout_width="100dp"
         android:layout_height="48dp"
         android:layout_marginStart="310dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="134dp"
         android:background="@null"
         android:fontFamily="@font/roboto_medium"
         android:hint="xxx.хх кг"
@@ -215,7 +230,7 @@
         android:layout_width="100dp"
         android:layout_height="48dp"
         android:layout_marginStart="310dp"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="220dp"
         android:background="@null"
         android:fontFamily="@font/roboto_medium"
         android:hint="xxx.хх кг"
@@ -233,8 +248,8 @@
         android:id="@+id/button_male_female"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="312dp"
-        android:layout_marginTop="230dp"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="301dp"
         android:background="@drawable/custom_button_3"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/female_male"
@@ -249,8 +264,8 @@
         android:id="@+id/button_level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="252dp"
-        android:layout_marginTop="302dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="385dp"
         android:background="@drawable/custom_button_3"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/level_et"
@@ -260,6 +275,79 @@
         app:backgroundTint="@null"
         app:layout_constraintStart_toStartOf="@+id/imageView28"
         app:layout_constraintTop_toTopOf="@+id/imageView28" />
+
+    <Button
+        android:id="@+id/button_eating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="470dp"
+        android:background="@drawable/custom_button_3"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/eatinglevel"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/imageView28"
+        app:layout_constraintTop_toTopOf="@+id/imageView28" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="198dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView28"
+        app:srcCompat="@drawable/smallgraybutton"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="198dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView28"
+        app:srcCompat="@drawable/smallgraybutton"
+        android:importantForAccessibility="no" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="178dp"
+        android:layout_height="58dp"
+        android:background="@drawable/custom_button_3"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/save_text_btn"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorLink="#FFFFFF"
+        android:textSize="25sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView32"
+        app:layout_constraintEnd_toEndOf="@+id/imageView32"
+        app:layout_constraintStart_toStartOf="@+id/imageView32"
+        app:layout_constraintTop_toTopOf="@+id/imageView32"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/btnLoad"
+        android:layout_width="178dp"
+        android:layout_height="58dp"
+        android:background="@drawable/custom_button_3"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/load_text_btn"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorLink="#FFFFFF"
+        android:textSize="25sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView33"
+        app:layout_constraintEnd_toEndOf="@+id/imageView33"
+        app:layout_constraintStart_toStartOf="@+id/imageView33"
+        app:layout_constraintTop_toTopOf="@+id/imageView33" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
