@@ -44,9 +44,25 @@ public class ProfileActivity extends AppCompatActivity {
         btnSave = findViewById(R.id.btnSave);
         btnLoad = findViewById(R.id.btnLoad);
 
-        sharedPreferences = getSharedPreferences("AppSettings", MODE_PRIVATE);
+
 
         sharedPreferences = getSharedPreferences("AppSettings", MODE_PRIVATE);
+
+        // Загрузка сохраненных данных
+        String height = sharedPreferences.getString(HEIGHT_KEY, "");
+        String weight = sharedPreferences.getString(WEIGHT_KEY, "");
+        String weightDesired = sharedPreferences.getString(WEIGHT_DESIRED_KEY, "");
+        String gender = sharedPreferences.getString(GENDER_KEY, "");
+        String level = sharedPreferences.getString(LEVEL_KEY, "");
+        String eating = sharedPreferences.getString(EATING_KEY, "");
+
+        // Отображение сохраненных данных в полях ввода
+        heightEt.setText(height);
+        weightEt.setText(weight);
+        weightDesiredEt.setText(weightDesired);
+        selectGenderButton.setText(gender);
+        selectLevelButton.setText(level);
+        selectEatingButton.setText(eating);
 
         btnSave.setOnClickListener(v -> saveData());
         btnLoad.setOnClickListener(v -> loadData());
@@ -67,8 +83,10 @@ public class ProfileActivity extends AppCompatActivity {
                 .setItems(new CharSequence[]{"Начинающий", "Продолжающий"}, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        String level = (which == 0) ? "Начинаюший" : "Продолжающий";
+                        String level = (which == 0) ? "Начин." : "Продол.";
                         saveLevelChoice(level);
+                        selectLevelButton.setText(level); // Обновление текста на кнопке
+                        saveData(); // Сохранение выбранного уровня
                     }
                 })
                 .show();
@@ -79,13 +97,16 @@ public class ProfileActivity extends AppCompatActivity {
                 .setItems(new CharSequence[]{"Набор веса", "Сброс веса"}, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        String eating = (which == 0) ? "Набор" : "Сброс";
+                        String eating = (which == 0) ? "Набор веса" : "Сброс веса";
                         saveEatingChoice(eating);
+                        selectEatingButton.setText(eating); // Обновление текста на кнопке
+                        saveData(); // Сохранение выбранного питания
                     }
                 })
                 .show();
     }
     private void showGenderDialog() {
+
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Выберите пол")
                 .setItems(new CharSequence[]{"Мужской", "Женский"}, new DialogInterface.OnClickListener() {
@@ -93,6 +114,8 @@ public class ProfileActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         String gender = (which == 0) ? "Мужской" : "Женский";
                         saveGenderChoice(gender);
+                        selectGenderButton.setText(gender); // Обновление текста на кнопке
+                        saveData(); // Сохранение выбранного пола
                     }
                 })
                 .show();
@@ -126,6 +149,12 @@ public class ProfileActivity extends AppCompatActivity {
         editor.putString(HEIGHT_KEY, heightEt.getText().toString());
         editor.putString(WEIGHT_KEY, weightEt.getText().toString());
         editor.putString(WEIGHT_DESIRED_KEY, weightDesiredEt.getText().toString());
+
+        editor.putString(GENDER_KEY, selectGenderButton.getText().toString()); // Сохранение выбранного пола
+        editor.putString(LEVEL_KEY, selectLevelButton.getText().toString());
+        editor.putString(EATING_KEY, selectEatingButton.getText().toString());
+
+
         editor.apply();
         Toast.makeText(this, "Успешно!", Toast.LENGTH_SHORT).show();
     }
@@ -135,9 +164,18 @@ public class ProfileActivity extends AppCompatActivity {
         String weight = sharedPreferences.getString(WEIGHT_KEY, "");
         String weightDesired = sharedPreferences.getString(WEIGHT_DESIRED_KEY, "");
 
+        String gender = sharedPreferences.getString(GENDER_KEY, ""); // Загрузка выбранного пола
+        String level = sharedPreferences.getString(LEVEL_KEY, "");
+        String eating = sharedPreferences.getString(EATING_KEY, "");
+
         heightEt.setText(height);
         weightEt.setText(weight);
         weightDesiredEt.setText(weightDesired);
+
+        selectGenderButton.setText(gender); // Установка текста на кнопку выбора пола
+        selectLevelButton.setText(level);
+        selectEatingButton.setText(eating);
+
         Toast.makeText(this, "Данные загружены", Toast.LENGTH_SHORT).show();
     }
 }
