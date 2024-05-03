@@ -16,7 +16,11 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class ProfileActivity extends AppCompatActivity {
     private Button selectGenderButton;
+    private Button selectLevelButton;
+    private Button selectEatingButton;
+    private static final String LEVEL_KEY = "level";
     private static final String GENDER_KEY = "gender";
+    private static final String EATING_KEY = "eating";
     private EditText heightEt, weightEt, weightDesiredEt;
     private Button btnSave, btnLoad;
     private SharedPreferences sharedPreferences;
@@ -30,7 +34,9 @@ public class ProfileActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_profile);
 
+        selectLevelButton = findViewById(R.id.button_level);
         selectGenderButton = findViewById(R.id.button_male_female);
+        selectEatingButton = findViewById(R.id.button_eating);
         heightEt = findViewById(R.id.height_et);
         weightEt = findViewById(R.id.weight_et);
         weightDesiredEt = findViewById(R.id.weight_desired_et);
@@ -52,6 +58,32 @@ public class ProfileActivity extends AppCompatActivity {
             return insets;
         });
         selectGenderButton.setOnClickListener(v -> showGenderDialog());
+        selectEatingButton.setOnClickListener(v -> showEatingDialog());
+        selectLevelButton.setOnClickListener(v -> showLevelDialog());
+    }
+    private void showLevelDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Выберите уровень")
+                .setItems(new CharSequence[]{"Начинающий", "Продолжающий"}, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        String level = (which == 0) ? "Начинаюший" : "Продолжающий";
+                        saveLevelChoice(level);
+                    }
+                })
+                .show();
+    }
+    private void showEatingDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Выберите тип питаня")
+                .setItems(new CharSequence[]{"Набор веса", "Сброс веса"}, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        String eating = (which == 0) ? "Набор" : "Сброс";
+                        saveEatingChoice(eating);
+                    }
+                })
+                .show();
     }
     private void showGenderDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -72,6 +104,22 @@ public class ProfileActivity extends AppCompatActivity {
         // После сохранения пола, обновите текст на кнопке для отображения выбранного пола
         selectGenderButton.setText(gender);
         Toast.makeText(this, "Выбран пол: " + gender, Toast.LENGTH_SHORT).show();
+    }
+    private void saveLevelChoice(String level) {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(LEVEL_KEY, level);
+        editor.apply();
+        // После сохранения пола, обновите текст на кнопке для отображения выбранного пола
+        selectLevelButton.setText(level);
+        Toast.makeText(this, "Выбран уровень: " + level, Toast.LENGTH_SHORT).show();
+    }
+    private void saveEatingChoice(String eating) {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(EATING_KEY, eating);
+        editor.apply();
+        // После сохранения пола, обновите текст на кнопке для отображения выбранного пола
+        selectEatingButton.setText(eating);
+        Toast.makeText(this, "Выбран тип Питания: " + eating, Toast.LENGTH_SHORT).show();
     }
     private void saveData() {
         SharedPreferences.Editor editor = sharedPreferences.edit();
