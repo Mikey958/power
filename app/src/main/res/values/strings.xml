@@ -59,4 +59,9 @@
     <string name="eating_text_level">Питание</string>
     <string name="load_text_btn">Загрузить</string>
     <string name="save_text_btn">Сохранить</string>
+    <string name="quesion_main">ЧЕМ БЫ ВЫ ХОТЕЛИ ЗАНЯТЬСЯ СЕГОДНЯ?</string>
+    <string name="training_icon_btn">икнока тренировки</string>
+    <string name="achivment_icon_btn">достижения иконка\n\n</string>
+    <string name="eating_icon_btn">TODO</string>
+    <string name="profile_text_btn">профиль иконка\n</string>
 </resources>

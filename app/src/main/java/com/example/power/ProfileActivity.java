@@ -1,8 +1,10 @@
 package com.example.power;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -30,6 +32,7 @@ public class ProfileActivity extends AppCompatActivity {
     private static final String WEIGHT_DESIRED_KEY = "weight_desired";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_profile);
@@ -76,6 +79,35 @@ public class ProfileActivity extends AppCompatActivity {
         selectGenderButton.setOnClickListener(v -> showGenderDialog());
         selectEatingButton.setOnClickListener(v -> showEatingDialog());
         selectLevelButton.setOnClickListener(v -> showLevelDialog());
+
+        findViewById(R.id.achivmentIconButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(ProfileActivity.this,AchievmentActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.homeIconButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(ProfileActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.eatingIconButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(ProfileActivity.this,EatingActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.trainingIconButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(ProfileActivity.this,TrainingActivity.class);
+                startActivity(intent);
+            }
+        });
     }
     private void showLevelDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);

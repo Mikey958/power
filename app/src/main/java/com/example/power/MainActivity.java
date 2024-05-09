@@ -56,6 +56,34 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        findViewById(R.id.achivmentIconButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,AchievmentActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.eatingIconButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,EatingActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.profileIconButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.trainingIconButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,TrainingActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

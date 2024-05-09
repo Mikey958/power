@@ -1,6 +1,9 @@
 package com.example.power;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class TrainingActivity extends AppCompatActivity {
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +23,23 @@ public class TrainingActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        findViewById(R.id.achivmentIconButton).setOnClickListener(v -> {
+            Intent intent=new Intent(TrainingActivity.this,AchievmentActivity.class);
+            startActivity(intent);
+        });
+        findViewById(R.id.homeIconButton).setOnClickListener(v -> {
+            Intent intent=new Intent(TrainingActivity.this,MainActivity.class);
+            startActivity(intent);
+        });
+        findViewById(R.id.profileIconButton).setOnClickListener(v -> {
+            Intent intent=new Intent(TrainingActivity.this,ProfileActivity.class);
+            startActivity(intent);
+        });
+        findViewById(R.id.eatingIconButton).setOnClickListener(v -> {
+            Intent intent=new Intent(TrainingActivity.this,EatingActivity.class);
+            startActivity(intent);
         });
     }
 }

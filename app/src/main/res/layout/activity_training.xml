@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TrainingActivity">
+    tools:context=".TrainingActivity"
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/textView5"
@@ -29,16 +30,16 @@
     <ImageButton
         android:id="@+id/full_body_train_start"
         android:layout_width="485dp"
-        android:layout_height="257dp"
+        android:layout_height="225dp"
         android:background="@drawable/rectangle"
+        android:contentDescription="@string/error_fullbody_train"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:srcCompat="@drawable/fullbodychallenge"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="@string/error_fullbody_train" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/imageView15"
@@ -213,5 +214,70 @@
         app:layout_constraintBottom_toBottomOf="@+id/press_train_start"
         app:layout_constraintStart_toEndOf="@+id/legs_train_start"
         app:srcCompat="@drawable/stratthreemin" />
+
+    <ImageButton
+        android:id="@+id/homeIconButton"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/white"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toStartOf="@+id/profileIconButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/legs_train_start"
+        app:srcCompat="@drawable/homeicon"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,VisualLintBounds,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/profileIconButton"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/white"
+        android:contentDescription="@string/profile_text_btn"
+        app:layout_constraintEnd_toStartOf="@+id/trainingIconButton"
+        app:layout_constraintStart_toEndOf="@+id/homeIconButton"
+        app:layout_constraintTop_toBottomOf="@+id/legs_train_start"
+        app:srcCompat="@drawable/profileicon"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck,DuplicateSpeakableTextCheck,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/trainingIconButton"
+        android:layout_width="52dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="33dp"
+        android:background="@color/white"
+        android:contentDescription="@string/training_icon_btn"
+        app:layout_constraintEnd_toStartOf="@+id/eatingIconButton"
+        app:layout_constraintStart_toEndOf="@+id/profileIconButton"
+        app:layout_constraintTop_toBottomOf="@+id/legs_train_start"
+        app:srcCompat="@drawable/trainingiconon"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/eatingIconButton"
+        android:layout_width="35dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/white"
+        android:contentDescription="@string/eating_icon_btn"
+        app:layout_constraintEnd_toStartOf="@+id/achivmentIconButton"
+        app:layout_constraintStart_toEndOf="@+id/trainingIconButton"
+        app:layout_constraintTop_toBottomOf="@+id/legs_train_start"
+        app:srcCompat="@drawable/eatingicon"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/achivmentIconButton"
+        android:layout_width="35dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:contentDescription="@string/achivment_icon_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eatingIconButton"
+        app:layout_constraintTop_toBottomOf="@+id/legs_train_start"
+        app:srcCompat="@drawable/achivmentsicon"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck,VisualLintBounds" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
