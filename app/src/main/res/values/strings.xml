@@ -64,4 +64,12 @@
     <string name="achivment_icon_btn">достижения иконка\n\n</string>
     <string name="eating_icon_btn">TODO</string>
     <string name="profile_text_btn">профиль иконка\n</string>
+    <string name="start_train">НАЧАЛО</string>
+    <string name="elem_train_1">Обратные отжимания</string>
+    <string name="elem_train_2">Выпады</string>
+    <string name="elem_train_3">Прыжки с махами над головой</string>
+    <string name="elem_train_4">Планка</string>
+    <string name="elem_train_5">Отжимания</string>
+    <string name="time_30">30 сек</string>
+    <string name="time_25">25 сек</string>
 </resources>

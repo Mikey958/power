@@ -49,12 +49,15 @@ dependencies {
     implementation("androidx.core:core-splashscreen:1.0.1")
 
     //noinspection UseTomlInstead
-    implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
+    implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
     //noinspection UseTomlInstead
     implementation("com.google.firebase:firebase-analytics")
     //noinspection UseTomlInstead
-    implementation("com.google.firebase:firebase-auth:22.3.1")
+    implementation("com.google.firebase:firebase-auth:23.0.0")
     //noinspection UseTomlInstead
-    implementation("com.google.firebase:firebase-database:20.3.1")
-
+    implementation("com.google.firebase:firebase-database:21.0.0")
+    //noinspection UseTomlInstead
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    //noinspection UseTomlInstead
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 }

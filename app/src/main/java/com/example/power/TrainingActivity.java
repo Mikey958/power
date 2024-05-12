@@ -24,7 +24,10 @@ public class TrainingActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
+        findViewById(R.id.full_body_train_start).setOnClickListener(v -> {
+            Intent intent=new Intent(TrainingActivity.this,FullBodyTrainingStartActivity.class);
+            startActivity(intent);
+        });
         findViewById(R.id.achivmentIconButton).setOnClickListener(v -> {
             Intent intent=new Intent(TrainingActivity.this,AchievmentActivity.class);
             startActivity(intent);
