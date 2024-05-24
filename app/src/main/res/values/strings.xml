@@ -72,4 +72,11 @@
     <string name="elem_train_5">Отжимания</string>
     <string name="time_30">30 сек</string>
     <string name="time_25">25 сек</string>
+    <string name="gray_background">gray background</string>
+    <string name="name_train">Название упражнения</string>
+    <string name="timer">00:00</string>
+    <string name="pause_btn">ПАУЗА</string>
+    <string name="pause_icon">pause_icon</string>
+    <string name="last_train_btn">Последняя тренировка\n</string>
+    <string name="skip_train_btn">Пропустить тренировку\n</string>
 </resources>

@@ -4,15 +4,18 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
-
+import android.view.View;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
+import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
-
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 public class FullBodyTrainingStartActivity extends AppCompatActivity {
 
 

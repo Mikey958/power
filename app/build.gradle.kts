@@ -53,6 +53,8 @@ dependencies {
     //noinspection UseTomlInstead
     implementation("com.google.firebase:firebase-analytics")
     //noinspection UseTomlInstead
+    implementation("com.google.firebase:firebase-auth")
+    //noinspection UseTomlInstead
     implementation("com.google.firebase:firebase-auth:23.0.0")
     //noinspection UseTomlInstead
     implementation("com.google.firebase:firebase-database:21.0.0")
@@ -60,4 +62,8 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.16.0")
     //noinspection UseTomlInstead
     annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
+    //noinspection UseTomlInstead
+    implementation("com.google.android.gms:play-services-auth:21.2.0")
+    //noinspection UseTomlInstead
+    implementation("androidx.appcompat:appcompat:1.6.1")
 }
