@@ -22,6 +22,7 @@
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView34"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -31,8 +32,10 @@
         android:id="@+id/imageView34"
         android:layout_width="484dp"
         android:layout_height="310dp"
+        android:layout_marginBottom="10dp"
         android:contentDescription="@string/gray_background"
         android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/nameTrain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
@@ -41,7 +44,7 @@
 
     <ImageView
         android:id="@+id/gifOneImage"
-        android:layout_width="375dp"
+        android:layout_width="374dp"
         android:layout_height="280dp"
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="@+id/imageView34"
@@ -52,9 +55,8 @@
 
     <TextView
         android:id="@+id/nameTrain"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:layout_marginTop="10dp"
         android:fontFamily="@font/roboto"
         android:gravity="center"
         android:text="@string/name_train"
@@ -62,6 +64,7 @@
         android:textColor="#000000"
         android:textColorLink="#000000"
         android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/circularProgressBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView34"
@@ -70,9 +73,8 @@
     <ProgressBar
 
         android:id="@+id/circularProgressBar"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
         android:backgroundTint="#C3DBFF"
         android:indeterminate="false"
         android:indeterminateTint="#C3DBFF"
@@ -90,7 +92,7 @@
         android:fontFamily="@font/roboto"
         android:text="@string/timer"
         android:textColor="#000000"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar"
         app:layout_constraintEnd_toEndOf="@+id/circularProgressBar"
         app:layout_constraintStart_toStartOf="@+id/circularProgressBar"

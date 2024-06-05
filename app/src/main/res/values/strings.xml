@@ -79,4 +79,11 @@
     <string name="pause_icon">pause_icon</string>
     <string name="last_train_btn">Последняя тренировка\n</string>
     <string name="skip_train_btn">Пропустить тренировку\n</string>
+    <string name="pause_logo_text">ПАУЗА</string>
+    <string name="restart_btn">Начать заново</string>
+    <string name="exit_btn">Выйти в меню</string>
+    <string name="continue_btn">Продолжить</string>
+    <string name="play_logo_btn">play_logo_btn</string>
+    <string name="reset_logo_btn">reset_logo_btn</string>
+    <string name="menu_logo_btn">menu_logo_btn</string>
 </resources>
