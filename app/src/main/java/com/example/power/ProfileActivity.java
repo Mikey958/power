@@ -67,7 +67,17 @@ public class ProfileActivity extends AppCompatActivity {
         selectLevelButton.setText(level);
         selectEatingButton.setText(eating);
 
-        btnSave.setOnClickListener(v -> saveData());
+        btnSave.setOnClickListener(v -> {
+                // Сохраняем флаг выполнения достижения
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putBoolean("achievementUnlocked", true);
+                editor.apply();
+
+                // Показываем сообщение пользователю
+                Toast.makeText(this, "Достижение разблокировано!", Toast.LENGTH_SHORT).show();
+
+                saveData();
+        });
         btnLoad.setOnClickListener(v -> loadData());
 
         EdgeToEdge.enable(this);
@@ -177,6 +187,8 @@ public class ProfileActivity extends AppCompatActivity {
         Toast.makeText(this, "Выбран тип Питания: " + eating, Toast.LENGTH_SHORT).show();
     }
     private void saveData() {
+
+
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString(HEIGHT_KEY, heightEt.getText().toString());
         editor.putString(WEIGHT_KEY, weightEt.getText().toString());
@@ -185,6 +197,7 @@ public class ProfileActivity extends AppCompatActivity {
         editor.putString(GENDER_KEY, selectGenderButton.getText().toString()); // Сохранение выбранного пола
         editor.putString(LEVEL_KEY, selectLevelButton.getText().toString());
         editor.putString(EATING_KEY, selectEatingButton.getText().toString());
+
 
 
         editor.apply();
@@ -210,4 +223,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         Toast.makeText(this, "Данные загружены", Toast.LENGTH_SHORT).show();
     }
+
+
+
 }

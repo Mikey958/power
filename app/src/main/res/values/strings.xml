@@ -70,6 +70,7 @@
     <string name="elem_train_3">Прыжки с махами над головой</string>
     <string name="elem_train_4">Планка</string>
     <string name="elem_train_5">Отжимания</string>
+    <string name="elem_train_6">Приготовьтесь к следующему упражнению</string>
     <string name="time_30">30 сек</string>
     <string name="time_25">25 сек</string>
     <string name="gray_background">gray background</string>
@@ -77,6 +78,7 @@
     <string name="timer">00:00</string>
     <string name="pause_btn">ПАУЗА</string>
     <string name="pause_icon">pause_icon</string>
+    <string name="training_complete">Поздравляю!</string>
     <string name="last_train_btn">Последняя тренировка\n</string>
     <string name="skip_train_btn">Пропустить тренировку\n</string>
     <string name="pause_logo_text">ПАУЗА</string>
@@ -86,4 +88,23 @@
     <string name="play_logo_btn">play_logo_btn</string>
     <string name="reset_logo_btn">reset_logo_btn</string>
     <string name="menu_logo_btn">menu_logo_btn</string>
+    <string name="text_train_finish">Поздравляю!</string>
+    <string name="train_complete">Тренировка завершена</string>
+    <string name="text_close">ЗАКРЫТЬ</string>
+    <string name="png_mem1">TODO</string>
+    <string name="text_achievments">Достижения</string>
+    <string name="text_received">Полученные</string>
+    <string name="text_all">Все</string>
+    <string name="background_for_achievment">achievment_background\n</string>
+    <string name="mem_error">error mem\n</string>
+    <string name="mem1_text">Первые шаги</string>
+    <string name="mem2_text">Ешь</string>
+    <string name="mem3_text">Проверка состояния</string>
+    <string name="mem4_text">Начало пути</string>
+    <string name="mem5_text">Блудный сын</string>
+    <string name="mem1_1_text">впервые заполнить информацию о себе</string>
+    <string name="mem2_2_text">впервые войти в аккаунт</string>
+    <string name="mem3_3_text">впервые перейти в раздел “Питание”</string>
+    <string name="mem4_4_text">закончить первую тренировку</string>
+    <string name="mem5_5_text">не заходить в аккаунт 7 дней</string>
 </resources>

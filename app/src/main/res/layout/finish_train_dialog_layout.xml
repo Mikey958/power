@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="428dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_dialog_background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="TextSizeCheck">
+
+    <TextView
+        android:id="@+id/customDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/text_train_finish"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/customDialogMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customDialogTitle"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto"
+        android:text="@string/train_complete"
+        android:textColor="#747474"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customDialogTitle" />
+
+    <Button
+        android:id="@+id/customDialogCloseButton"
+        android:layout_width="257dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/customDialogMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/custmo_button_2"
+        android:fontFamily="@font/roboto"
+        android:scaleType="centerCrop"
+        android:text="@string/text_close"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView39" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="310dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/png_mem1"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customDialogMessage"
+        app:srcCompat="@drawable/mem_comlete_train"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,3 @@
-import com.android.build.api.dsl.BuildFeatures
-
 plugins {
 
     id("com.android.application")
@@ -49,7 +47,7 @@ dependencies {
     implementation("androidx.core:core-splashscreen:1.0.1")
 
     //noinspection UseTomlInstead
-    implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
+    implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
     //noinspection UseTomlInstead
     implementation("com.google.firebase:firebase-analytics")
     //noinspection UseTomlInstead
@@ -65,5 +63,5 @@ dependencies {
     //noinspection UseTomlInstead
     implementation("com.google.android.gms:play-services-auth:21.2.0")
     //noinspection UseTomlInstead
-    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.appcompat:appcompat:1.7.0")
 }
