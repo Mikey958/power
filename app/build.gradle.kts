@@ -64,4 +64,6 @@ dependencies {
     implementation("com.google.android.gms:play-services-auth:21.2.0")
     //noinspection UseTomlInstead
     implementation("androidx.appcompat:appcompat:1.7.0")
+    //noinspection UseTomlInstead
+    implementation("com.mikhaellopez:circularprogressbar:3.1.0")
 }

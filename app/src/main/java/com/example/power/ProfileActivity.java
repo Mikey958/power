@@ -90,6 +90,14 @@ public class ProfileActivity extends AppCompatActivity {
         selectEatingButton.setOnClickListener(v -> showEatingDialog());
         selectLevelButton.setOnClickListener(v -> showLevelDialog());
 
+
+        findViewById(R.id.button_statistics).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(ProfileActivity.this,ProfileActivity2.class);
+                startActivity(intent);
+            }
+        });
         findViewById(R.id.achivmentIconButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

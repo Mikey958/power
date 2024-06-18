@@ -1,8 +1,10 @@
 package com.example.power;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,6 +20,58 @@ public class AchievmentActivity extends AppCompatActivity {
         // Получаем SharedPreferences
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
         long lastVisitTime = settings.getLong("lastVisitTime", System.currentTimeMillis());
+
+        findViewById(R.id.button_received).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Получаем SharedPreferences
+                SharedPreferences settings = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+
+                // Получаем статусы достижений
+                boolean isFirstEatingActivityAchievement = settings.getBoolean("firstEatingActivity", false);
+                boolean isFirstMainActivityAchievement = settings.getBoolean("firstMainActivityVisit", false);
+                boolean isFirstTrainingAchievement = settings.getBoolean("firstTrainingAchievement", false);
+                boolean isAchievementUnlocked = settings.getBoolean("achievementUnlocked", false);
+
+                // Создаем Intent и добавляем статусы достижений
+                Intent intent = new Intent(AchievmentActivity.this, AchievmentActivity2.class);
+                intent.putExtra("firstEatingActivity", isFirstEatingActivityAchievement);
+                intent.putExtra("firstMainActivityVisit", isFirstMainActivityAchievement);
+                intent.putExtra("firstTrainingAchievement", isFirstTrainingAchievement);
+                intent.putExtra("longAbsenceAchievement", settings.getBoolean("longAbsenceAchievement", false));
+                intent.putExtra("achievementUnlocked", isAchievementUnlocked);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.profileIconButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(AchievmentActivity.this,ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.homeIconButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(AchievmentActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.eatingIconButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(AchievmentActivity.this,EatingActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.trainingIconButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(AchievmentActivity.this,TrainingActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         // Проверяем, прошло ли более 7 дней с последнего визита
         if (System.currentTimeMillis() - lastVisitTime > 7 * 24 * 60 * 60 * 1000) {

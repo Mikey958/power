@@ -74,7 +74,7 @@
         android:id="@+id/circularProgressBar"
         android:layout_width="260dp"
         android:layout_height="260dp"
-        android:backgroundTint="#C3DBFF"
+        android:backgroundTint="@null"
         android:indeterminate="false"
         android:indeterminateTint="#C3DBFF"
         android:max="100"

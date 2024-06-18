@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/white"/> <!-- Вы можете изменить цвет заливки -->
+    <size
+        android:width="164dp"
+        android:height="164dp"/>
+    <stroke
+        android:width="0.5dp"
+        android:color="#B97C5A"/> <!-- Измените цвет границы при необходимости -->
+</shape>
