@@ -446,7 +446,7 @@
             android:contentDescription="@string/background_for_imt" />
 
         <TextView
-            android:id="@+id/textView32"
+            android:id="@+id/textViewIMT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
@@ -595,10 +595,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="17dp"
-            android:layout_marginTop="17dp"
             android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView73"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView59"
+            app:layout_constraintTop_toTopOf="@+id/imageView73"
             app:srcCompat="@drawable/background_for_color_cube_2"
             tools:ignore="ImageContrastCheck" />
 
@@ -607,10 +607,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="17dp"
-            android:layout_marginTop="3dp"
             android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView74"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/background_blue_imt"
+            app:layout_constraintTop_toTopOf="@+id/imageView74"
             app:srcCompat="@drawable/background_for_color_cube_2"
             tools:ignore="ImageContrastCheck" />
 
@@ -619,10 +619,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="17dp"
-            android:layout_marginTop="3dp"
             android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView75"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/background_green_imt"
+            app:layout_constraintTop_toTopOf="@+id/imageView75"
             app:srcCompat="@drawable/background_for_color_cube_2"
             tools:ignore="ImageContrastCheck" />
 
@@ -631,80 +631,80 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="17dp"
-            android:layout_marginTop="3dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView76"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/background_orange_imt"
-            app:srcCompat="@drawable/background_for_color_cube_2"
-            android:importantForAccessibility="no" />
+            app:layout_constraintTop_toTopOf="@+id/imageView76"
+            app:srcCompat="@drawable/background_for_color_cube_2" />
 
         <ImageView
             android:id="@+id/background_red_imt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="17dp"
-            android:layout_marginTop="3dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView77"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/background_pink_imt"
-            app:srcCompat="@drawable/background_for_color_cube_2"
-            android:importantForAccessibility="no" />
+            app:layout_constraintTop_toTopOf="@+id/imageView77"
+            app:srcCompat="@drawable/background_for_color_cube_2" />
 
         <ImageView
             android:id="@+id/imageView73"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="22dp"
-            app:layout_constraintBottom_toBottomOf="@+id/background_blue_imt"
+            android:layout_marginTop="21dp"
+            android:importantForAccessibility="no"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/background_blue_imt"
+            app:layout_constraintTop_toBottomOf="@+id/imageView57"
             app:srcCompat="@drawable/custmom_cube_1"
-            tools:ignore="ImageContrastCheck"
-            android:importantForAccessibility="no" />
+            tools:ignore="ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/imageView74"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="22dp"
-            app:layout_constraintBottom_toBottomOf="@+id/background_green_imt"
+            android:layout_marginTop="15dp"
+            android:importantForAccessibility="no"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/background_green_imt"
+            app:layout_constraintTop_toBottomOf="@+id/imageView73"
             app:srcCompat="@drawable/custmom_cube_2"
-            tools:ignore="ImageContrastCheck"
-            android:importantForAccessibility="no" />
+            tools:ignore="ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/imageView75"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="22dp"
-            app:layout_constraintBottom_toBottomOf="@+id/background_orange_imt"
+            android:layout_marginTop="15dp"
+            android:importantForAccessibility="no"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/background_orange_imt"
+            app:layout_constraintTop_toBottomOf="@+id/imageView74"
             app:srcCompat="@drawable/custmom_cube_3"
-            tools:ignore="ImageContrastCheck"
-            android:importantForAccessibility="no" />
+            tools:ignore="ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/imageView76"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="22dp"
-            app:layout_constraintBottom_toBottomOf="@+id/background_pink_imt"
+            android:layout_marginTop="15dp"
+            android:importantForAccessibility="no"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/background_pink_imt"
-            app:srcCompat="@drawable/custmom_cube_4"
-            android:importantForAccessibility="no" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView75"
+            app:srcCompat="@drawable/custmom_cube_4" />
 
         <ImageView
             android:id="@+id/imageView77"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="22dp"
-            app:layout_constraintBottom_toBottomOf="@+id/background_red_imt"
+            android:layout_marginTop="15dp"
+            android:importantForAccessibility="no"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/background_red_imt"
-            app:srcCompat="@drawable/custmom_cube_5"
-            android:importantForAccessibility="no" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView76"
+            app:srcCompat="@drawable/custmom_cube_5" />
 
         <TextView
             android:id="@+id/textView34"
@@ -775,11 +775,11 @@
             android:id="@+id/imageView31"
             android:layout_width="484dp"
             android:layout_height="94dp"
-            android:layout_marginTop="17dp"
+            android:layout_marginTop="21dp"
             android:importantForAccessibility="no"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/background_red_imt"
+            app:layout_constraintTop_toBottomOf="@+id/imageView77"
             app:srcCompat="@drawable/background_to_minimenu"
             tools:ignore="ImageContrastCheck,VisualLintBounds" />
 
@@ -806,7 +806,7 @@
             app:layout_constraintEnd_toStartOf="@+id/trainingIconButton"
             app:layout_constraintStart_toEndOf="@+id/homeIconButton"
             app:layout_constraintTop_toTopOf="@+id/imageView31"
-            app:srcCompat="@drawable/profileicon"
+            app:srcCompat="@drawable/profileiconon"
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck,DuplicateSpeakableTextCheck,VisualLintBounds" />
 
         <ImageButton
@@ -845,7 +845,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/eatingIconButton"
             app:layout_constraintTop_toTopOf="@+id/imageView31"
-            app:srcCompat="@drawable/achievmenticonon"
+            app:srcCompat="@drawable/achivmentsicon"
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck,VisualLintBounds" />
 
 

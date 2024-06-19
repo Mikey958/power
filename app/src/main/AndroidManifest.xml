@@ -15,6 +15,15 @@
         android:theme="@style/Theme.Power"
         tools:targetApi="31">
         <activity
+            android:name=".EatingActivityDinner"
+            android:exported="false" />
+        <activity
+            android:name=".EatingActivityLunch"
+            android:exported="false" />
+        <activity
+            android:name=".EatingActivityBreakfast"
+            android:exported="false" />
+        <activity
             android:name=".ProfileActivity2"
             android:exported="false" />
         <activity

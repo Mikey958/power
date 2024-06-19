@@ -143,7 +143,19 @@
         app:srcCompat="@drawable/dinner_text"
         tools:ignore="VisualLintBounds" />
 
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="484dp"
+        android:layout_height="94dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dinner"
+        app:srcCompat="@drawable/background_to_minimenu"
+        tools:ignore="ImageContrastCheck,VisualLintBounds" />
+
     <ImageButton
+        android:backgroundTint="#f6f6f6"
         android:id="@+id/homeIconButton"
         android:layout_width="40dp"
         android:layout_height="36dp"
@@ -157,6 +169,7 @@
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,VisualLintBounds,ImageContrastCheck" />
 
     <ImageButton
+        android:backgroundTint="#f6f6f6"
         android:id="@+id/profileIconButton"
         android:layout_width="37dp"
         android:layout_height="37dp"
@@ -170,6 +183,7 @@
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck,DuplicateSpeakableTextCheck,VisualLintBounds" />
 
     <ImageButton
+        android:backgroundTint="#f6f6f6"
         android:id="@+id/trainingIconButton"
         android:layout_width="52dp"
         android:layout_height="31dp"
@@ -183,6 +197,7 @@
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck,VisualLintBounds" />
 
     <ImageButton
+        android:backgroundTint="#f6f6f6"
         android:id="@+id/eatingIconButton"
         android:layout_width="35dp"
         android:layout_height="38dp"
@@ -196,6 +211,7 @@
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck,VisualLintBounds" />
 
     <ImageButton
+        android:backgroundTint="#f6f6f6"
         android:id="@+id/achivmentIconButton"
         android:layout_width="35dp"
         android:layout_height="43dp"

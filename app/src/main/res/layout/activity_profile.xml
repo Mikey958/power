@@ -356,6 +356,18 @@
         app:layout_constraintTop_toTopOf="@+id/imageView33"
         tools:ignore="VisualLintBounds" />
 
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="484dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="10dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView32"
+        app:srcCompat="@drawable/background_to_minimenu"
+        tools:ignore="ImageContrastCheck,VisualLintBounds" />
+
     <ImageButton
         android:id="@+id/homeIconButton"
         android:layout_width="40dp"
@@ -363,6 +375,7 @@
         android:layout_marginTop="29dp"
         android:background="@color/white"
         android:importantForAccessibility="no"
+        android:backgroundTint="#f6f6f6"
         app:layout_constraintEnd_toStartOf="@+id/profileIconButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView32"
@@ -375,6 +388,7 @@
         android:layout_height="37dp"
         android:layout_marginTop="29dp"
         android:background="@color/white"
+        android:backgroundTint="#f6f6f6"
         android:contentDescription="@string/profile_text_btn"
         app:layout_constraintEnd_toStartOf="@+id/trainingIconButton"
         app:layout_constraintStart_toEndOf="@+id/homeIconButton"
@@ -388,6 +402,7 @@
         android:layout_height="31dp"
         android:layout_marginTop="33dp"
         android:background="@color/white"
+        android:backgroundTint="#f6f6f6"
         android:contentDescription="@string/training_icon_btn"
         app:layout_constraintEnd_toStartOf="@+id/eatingIconButton"
         app:layout_constraintStart_toEndOf="@+id/profileIconButton"
@@ -402,6 +417,7 @@
         android:layout_marginTop="28dp"
         android:background="@color/white"
         android:contentDescription="@string/eating_icon_btn"
+        android:backgroundTint="#f6f6f6"
         app:layout_constraintEnd_toStartOf="@+id/achivmentIconButton"
         app:layout_constraintStart_toEndOf="@+id/trainingIconButton"
         app:layout_constraintTop_toBottomOf="@+id/imageView32"
@@ -414,6 +430,7 @@
         android:layout_height="43dp"
         android:layout_marginTop="25dp"
         android:background="@color/white"
+        android:backgroundTint="#f6f6f6"
         android:contentDescription="@string/achivment_icon_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/eatingIconButton"

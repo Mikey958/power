@@ -27,8 +27,8 @@ public class ProfileActivity extends AppCompatActivity {
     private Button btnSave, btnLoad;
     private SharedPreferences sharedPreferences;
 
-    private static final String HEIGHT_KEY = "height";
-    private static final String WEIGHT_KEY = "weight";
+    public static final String WEIGHT_KEY = "weight";
+    public static final String HEIGHT_KEY = "height";
     private static final String WEIGHT_DESIRED_KEY = "weight_desired";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +50,9 @@ public class ProfileActivity extends AppCompatActivity {
 
 
         sharedPreferences = getSharedPreferences("AppSettings", MODE_PRIVATE);
+        loadValues();
+
+        findViewById(R.id.btnSave).setOnClickListener(v -> saveValues());
 
         // Загрузка сохраненных данных
         String height = sharedPreferences.getString(HEIGHT_KEY, "");
@@ -126,6 +129,19 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    private void saveValues() {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(WEIGHT_KEY, weightEt.getText().toString());
+        editor.putString(HEIGHT_KEY, heightEt.getText().toString());
+        editor.apply();
+    }
+
+    private void loadValues() {
+        String weight = sharedPreferences.getString(WEIGHT_KEY, "");
+        String height = sharedPreferences.getString(HEIGHT_KEY, "");
+        weightEt.setText(weight);
+        heightEt.setText(height);
     }
     private void showLevelDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);

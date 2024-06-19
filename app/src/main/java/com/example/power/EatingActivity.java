@@ -13,17 +13,13 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class EatingActivity extends AppCompatActivity {
 
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_eating);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
         findViewById(R.id.achivmentIconButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +45,27 @@ public class EatingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(EatingActivity.this,TrainingActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.breakfast).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(EatingActivity.this,EatingActivityBreakfast.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.lunch).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(EatingActivity.this,EatingActivityLunch.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.dinner).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(EatingActivity.this,EatingActivityDinner.class);
                 startActivity(intent);
             }
         });
