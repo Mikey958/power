@@ -117,7 +117,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView52"
             app:layout_constraintTop_toBottomOf="@+id/imageView68"
-            app:srcCompat="@drawable/omelet" />
+            app:srcCompat="@drawable/omelet"
+            tools:ignore="ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/imageView54"
